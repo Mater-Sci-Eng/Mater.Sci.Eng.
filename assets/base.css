@@ -1,0 +1,7 @@
+.hangout { padding-bottom:8px; }
+.hangout.hangout-last { padding-bottom:0px; }
+
+@media (max-width: 400px) {
+    #hello h3 { font-size:22px; }
+    #hello h4 { font-size:16px; }
+}

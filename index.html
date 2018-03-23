@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Materials Engineers - Slack Channel</title>
+
+    <link href="assets/bootstrap.css" rel="stylesheet">
+    <link href="assets/main.css" rel="stylesheet">
+    <link href="assets/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/base.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/slack.png">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    <div class="modal fade" id="invite-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Request Invitation</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Submit your email address and you will get an invite shortly thereafter with a link to the Slack channel.</p>
+                    <p id="invitation-sent" class="alert alert-success" style="display:none;margin-bottom:0px;">Invitation sent! You should get an email shortly! <br> If you are having issues email me at aseyfioglu [at] gmail [dot] com</p>
+                    <p id="invitation-pending" class="alert alert-warning" style="display:none;margin-bottom:0px;">Your invitation is still pending! <br> If you are having issues email me at aseyfioglu [at] gmail [dot] com</p>
+                    <p id="invitation-already" class="alert alert-info" style="display:none;margin-bottom:0px;">You are already on the team! <br> If you are having issues email me at aseyfioglu [at] gmail [dot] com</p>
+                    <p id="invitation-error" class="alert alert-danger" style="display:none;margin-bottom:0px;">There was an error...probably because Slack changed the API endpoint on me ;) shoot me an email at aseyfioglu [at] gmail [dot] com</p>
+                    <p id="invitation-email-format" class="alert alert-danger" style="display:none;margin-bottom:0px;">Looks like your email didn't pass the regex. Shoot me an email at aseyfioglu [at] gmail [dot] com if the regex is incorrect and you need an invite.</p>
+
+                    <form id="submit-email">
+                        <input class="form-control" type="email" name="email" placeholder="Email Address" autocomplete="off">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button id="submit-email-form" type="button" class="btn btn-dark">Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="https://devopsengineers.com/"><img style="width:50px;" src="assets/slack.png"></a>
+            </div>
+            <div class="navbar-collapse collapse" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="javascript:;" data-toggle="modal" data-target="#invite-modal">Request Invitation</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="hello">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 centered">
+
+                </div>
+
+                <div class="col-lg-12 centered">
+                    <h1 class="hidden-xs">#materialsEngineers</h1>
+                    <h2 class="hidden-xs">SLACK CHANNEL</h2>
+
+                    <h3 class="visible-xs">#materialsEngineers</h3>
+                    <h4 class="visible-xs">SLACK CHANNEL</h4>
+
+                    <h4>2000+ Engineers And Growing!</h4>
+                    <h4><a href="https://twitter.com/materialsngineers" target="_blank">@materialsEngineers</a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="green">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 centered">
+                    <h3>Who are we?</h3>
+                    <p>
+                        We are simply a group of engineers talking about devops related topics in our Slack channel.
+                        We enjoy holding Google Hangouts to discuss infrastructure, automation, continuous integration
+                        and various other topics. If you would like to join, present a topic, or participate in anyway
+                        feel free to request an invite to our Slack channel!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="f">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <p>By engineers for engineers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/bootstrap.js"></script>
+    <script src="assets/base.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115169921-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115169921-1');
+</script>
+
+</body>
+</html>
